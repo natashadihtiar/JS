@@ -1,0 +1,31 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+  <script>
+
+let question = prompt("Кто пришел?");
+let password;
+	if (question === "Админ") {
+		let password = prompt("Пароль?");
+		if(password === "Черный Властелин") {
+			alert("Добро пожаловать!");
+		} else if(!password) {
+			alert("Вход отменен");
+		} else {
+			alert("Пароль неверен");
+		}
+	}
+		else if(!question) {
+			alert("Вход отменен");
+		}
+		else {
+			alert("Я вас не знаю");
+		}
+
+	
+  </script>
+ </head>
+ <body>
+</body>
+</html>
